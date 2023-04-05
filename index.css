@@ -22,53 +22,9 @@ input {
 
 input, button {
   padding: 10px;
-  margin-bottom: 10px;
   width: -webkit-fill-available;
 }
 
-button {
-  cursor: pointer;
-}
-
-button:active {
-  opacity: 0.8;
-}
-
-.clear {
-  background: transparent;
-  border: none;
-  color: white;
-}
-.clear:disabled {
-  background: transparent;
-  border: none;
-  color: rgb(15, 116, 55);
-  cursor: not-allowed;
-  opacity: 0.5;
-}
-
-.solid {
-  background: transparent;
-  border: none;
-  color: white;
-}
-
-.solid:disabled {
-  background: transparent;
-  border: none;
-  color: rgb(15, 116, 55);
-  cursor: not-allowed;
-  opacity: 0.5;
-}
-
-.outline {
-  background: transparent;
-  color: white;
-  border: 1px solid white;
-}
-
-.error {
-  color: white;
-  background: red;
-  display: none;
+.form-field {
+  margin-bottom: 10px;
 }
