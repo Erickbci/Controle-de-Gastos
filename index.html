@@ -20,9 +20,10 @@
       type="email" 
       name="email" 
       placeholder="seu@email.com"
-      onchange="validateFields()"
+      onchange="onChangeEmail()"
       >
-
+      <div class="error" id="email-required-error">Email é obrigatório</div>
+      <div class="error" id="email-invalid-error">Email é inválido</div>
     </div>
     <div>
       <div>
@@ -33,9 +34,9 @@
       type="password" 
       name="password" 
       placeholder="Senha"
-      onchange="validateFields()"
+      onchange="onChangePassword()"
       >
-
+      <div class="error" id="password-required-error">Senha é obrigatória</div>
     </div>
     <div>
       <button id="recover-password-button" type="button" class="clear" disabled>Recuperar senha</button>
