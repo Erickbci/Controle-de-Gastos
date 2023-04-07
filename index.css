@@ -33,6 +33,7 @@ input {
   right: 0;
   width: 24px;
   height: 24px;
+  opacity: 0.7;
 }
 
 input, button {

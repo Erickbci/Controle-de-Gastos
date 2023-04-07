@@ -46,10 +46,11 @@ function isPasswordValid() {
 function seePassword() {
   if (form.password().type === 'password') {
     form.password().type = 'text';
-    form.seePasswordImage().src = 'olho-fechado.svg'
+    form.seePasswordImage().setAttribute('src', 'olho.svg');
     return;
   } else {
     form.password().type = 'password';
+    form.seePasswordImage().setAttribute('src', 'olho-fechado.svg');
   } 
 
 }
@@ -63,5 +64,5 @@ const form = {
   password: () => document.getElementById('password'),
   passwordRequiredError: () => document.getElementById('password-required-error'),
   recoverPassword: () => document.getElementById('recover-password-button'),
-  seePasswordImage: () => document.getElementById('see-password-image'),
+  seePasswordImage: () => document.getElementById('see-password-img')
 }
