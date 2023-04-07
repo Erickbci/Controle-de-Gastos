@@ -43,6 +43,17 @@ function isPasswordValid() {
   return true;
 }
 
+function seePassword() {
+  if (form.password().type === 'password') {
+    form.password().type = 'text';
+    form.seePasswordImage().src = 'olho-fechado.svg'
+    return;
+  } else {
+    form.password().type = 'password';
+  } 
+
+}
+
 
 const form = {
   email: () => document.getElementById('email'),
@@ -51,5 +62,6 @@ const form = {
   loginButton: () => document.getElementById('login-button'),
   password: () => document.getElementById('password'),
   passwordRequiredError: () => document.getElementById('password-required-error'),
-  recoverPassword: () => document.getElementById('recover-password-button')
+  recoverPassword: () => document.getElementById('recover-password-button'),
+  seePasswordImage: () => document.getElementById('see-password-image'),
 }

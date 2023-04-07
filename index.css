@@ -20,6 +20,21 @@ input {
   border: none;
 }
 
+#password {
+  
+}
+
+.see-password-img {
+  cursor: pointer;
+  margin-top: 24px;
+  margin-right: 8px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 24px;
+}
+
 input, button {
   padding: 10px;
   width: -webkit-fill-available;
@@ -27,4 +42,5 @@ input, button {
 
 .form-field {
   margin-bottom: 10px;
+  position: relative;
 }
