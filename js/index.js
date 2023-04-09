@@ -8,6 +8,14 @@ function onChangePassword() {
   togglePasswordError();
 }
 
+const botao = document.getElementById('botao');
+
+function goHome(event) {
+  event.preventDefault();
+  window.location = '../pages/home.html';
+}
+botao.addEventListener('click', goHome)
+
 function isEmailValid() {
   const email = form.email().value
   if (!email) {
