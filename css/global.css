@@ -1,3 +1,20 @@
+.loading {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.loading label {
+  font-size: 24px;
+}
+
+.centralize {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 button {
   cursor: pointer;
   margin-bottom: 10px;

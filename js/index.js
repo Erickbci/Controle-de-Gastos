@@ -9,11 +9,14 @@ function onChangePassword() {
 }
 
 function login(){
+  showLoading();
   firebase.auth().signInWithEmailAndPassword(
     form.email().value, form.password().value
   ).then(response => {
+    hideLoading();
     window.location.href = 'pages/home/home.html'
   }).catch(error => {
+    hideLoading();
     alert(getErrorMessages(error))
   })
 }
@@ -26,6 +29,7 @@ function getErrorMessages(error){
 }
 
 function register(){
+  
   window.location.href = 'pages/register/register.html'
 }
 
