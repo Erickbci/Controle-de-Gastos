@@ -5,8 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="../../css/global.css">
     <link rel="stylesheet" href="register.css">
-    <script src="../../js/validations.js"></script>
-    <script src="register.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/9.19.1/firebase-app-compat.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/9.19.1/firebase-auth-compat.js"></script>
+    <script defer src="../../js/firebase.js"></script>
+    <script defer src="../../js/validations.js"></script>
+    <script defer src="../../js/loading.js"></script>
+    <script defer src="register.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrar - Controle de Gastos</title>
 </head>
@@ -30,7 +34,7 @@
             <div class="error" id="password-doesnt-match-error">Senha e Confirmar senha devem ser iguais</div>
         </div>
         <div>
-            <button type="button" class="solid" disabled id="register-button">Registrar</button>
+            <button type="button" class="solid" disabled id="register-button" onclick="register()">Registrar</button>
         </div>
         <div>
             <button type="button" class="clear">Login</button>
