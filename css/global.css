@@ -3,6 +3,11 @@
   position: relative;
 }
 
+body {
+  margin: 0;
+  background: rgb(45, 211, 111);
+}
+
 .see-password-img {
   cursor: pointer;
   margin-top: 24px;
