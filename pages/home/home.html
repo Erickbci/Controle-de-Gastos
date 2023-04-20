@@ -9,13 +9,41 @@
     <script defer src="https://www.gstatic.com/firebasejs/9.19.1/firebase-app-compat.js"></script>
     <script defer src="https://www.gstatic.com/firebasejs/9.19.1/firebase-auth-compat.js"></script>
     <script defer src="../../js/firebase.js"></script>
-    <script src="../../js/auth-guard.js"></script>
-    <script src="home.js"></script>
+    <script defer src="../../js/auth-guard.js"></script>
+    <script defer src="home.js"></script>
     <title>Home - Controle de Gastos</title>
 </head>
 <body>
     <header>
         <button onclick="logOut()" class="clear" type="button">Sair</button>
     </header>
+    <ol>
+        <li class="expense">
+            <b>04/01/2022</b>
+            <p>R$ 10,00</p>
+            <p>supermercado</p>
+        </li>
+        <li class="income">
+            <b>02/05/2022</b>
+            <p>R$ 37,00</p>
+            <p>salario</p>
+            <p>empresa A</p>
+        </li>
+        <li class="expense">
+            <b>13/08/2022</b>
+            <p>EUR 10,00</p>
+            <p>transporte</p>
+            <p>metro ida e volta</p>
+        </li>
+        <li class="expense">
+            <b>25/10/2022</b>
+            <p>USD 10,00</p>
+            <p>aluguel</p>
+            <p>mensalidade</p>
+        </li>  
+    </ol>
+
+    <button class="fab fixed bottom right">+</button>
+
 </body>
 </html>
