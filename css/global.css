@@ -8,6 +8,14 @@ body {
   background: rgb(45, 211, 111);
 }
 
+header {
+  text-align: right;
+}
+
+header button {
+  width: auto;
+}
+
 .see-password-img {
   cursor: pointer;
   margin-top: 24px;
@@ -38,9 +46,13 @@ body {
   align-items: center;
 }
 
-input, button {
+input, button, select {
   padding: 10px;
   width: -webkit-fill-available;
+}
+
+input[type="radio"] {
+  width: auto;
 }
 
 button {
