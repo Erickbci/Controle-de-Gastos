@@ -23,7 +23,7 @@
         <form>
             <div class="form-field">
                 <div><label>Transação *</label></div>
-                <input type="radio" name="type" id="expense"> 
+                <input type="radio" name="type" checked id="expense"> 
                 <label for="expense">Despesa</label>
                 <input type="radio" name="type" id="income">
                 <label for="income">Receita</label>
@@ -35,7 +35,7 @@
             </div>
             <div class="form-field">
                 <div><label>Moeda *</label></div>
-                <select>
+                <select id="currency">
                     <option value="USD">Dólar</option>
                     <option value="EUR">Euro</option>
                     <option value="BRL" selected>Real</option>
@@ -62,9 +62,9 @@
             </div>
             <div class="form-field">
                 <div><label>Descrição</label></div>
-                <input type="text">
+                <input type="text" id="description">
             </div>
-            <button type="button" class="solid" id="save-button" disabled>Salvar</button>
+            <button type="button" class="solid" id="save-button" onclick="saveTransaction()" disabled>Salvar</button>
             <button type="button" class="clear">Cancelar</button>
         </form>
     </main>
