@@ -108,6 +108,11 @@ button.fab.right {
   border: 1px solid white;
 }
 
+.outline.danger {
+  color: red;
+  border-color: red;
+}
+
 .error {
   color: red;
   display: none;
